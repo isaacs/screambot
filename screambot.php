@@ -1,4 +1,4 @@
-#!/usr/env php
+#!/usr/bin/env php
 <?php
 
 /**
@@ -39,6 +39,7 @@ while (strlen($s) < 140) {
 		$s = rand(0,3)===1 ? "$f $s" : "$s $f";
 	} else break;
 }
+echo "Screaming: $s\n";
 $s = rawurlencode(trim($s));
 
 array_shift($argv);
